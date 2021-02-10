@@ -6,10 +6,8 @@ const Login = () => {
     const [name,setName] = useState("Login");
     const [username,setUsername] = useState('');
     const [password,setPassword] = useState('');
-    const [myname,setMyname] = useState('');
     const touch = () =>{
         setCount(count+1)
-        setMyname('Increament')
     }
     function chkLogin() {
         if (username === 'anonde65' && password === ''){
@@ -31,7 +29,7 @@ const Login = () => {
             <TextInput style={styles.inputBox} onChangeText={text => setPassword(text)} placeholder="enter password."></TextInput>
         </View>
         <TouchableHighlight underlayColor="#fff" style={styles.button}  onPress={chkLogin}>
-            <Text style={styles.text}>{name}{myname}</Text>
+            <Text style={styles.text}>{name}</Text>
         </TouchableHighlight>
     </View>
   )
