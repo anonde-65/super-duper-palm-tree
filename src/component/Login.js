@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import {View,Text ,StyleSheet, TextInput, Alert, TouchableHighlight} from 'react-native'
-//Const
+//Consts
 const Login = () => {
     const [count,setCount] = useState(0);
     const [name,setName] = useState("Login");
