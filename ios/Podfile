@@ -1,11 +1,11 @@
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
-
+pod 'RNGestureHandler', :path => "../node_modules/react-native-gesture-handler"
 platform :ios, '10.0'
 
 target 'testReactnativeDev' do
   config = use_native_modules!
-
+  
   use_react_native!(:path => config["reactNativePath"])
 
   target 'testReactnativeDevTests' do
@@ -22,6 +22,7 @@ target 'testReactnativeDev' do
    flipper_post_install(installer)
  end
 end
+
 
 target 'testReactnativeDev-tvOS' do
   # Pods for testReactnativeDev-tvOS

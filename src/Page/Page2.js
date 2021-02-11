@@ -1,7 +1,7 @@
 import React from 'react'
 import {View, Text, StyleSheet, TouchableHighlight} from 'react-native'
 
-const HomePage = () => {
+const Page2 = () => {
   return  (
     <View style={styles.container}>
         <TouchableHighlight onPress={console.log("A")}>
@@ -20,4 +20,4 @@ const styles = StyleSheet.create({
     color: 'blue',
   }
 })
-export default HomePage;
+export default Page2;
