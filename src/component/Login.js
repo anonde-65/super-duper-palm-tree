@@ -14,7 +14,7 @@ const Login = () => {
         if (username === 'anonde65' && password === ''){
             setName('Success')
         }else{
-            Alert.alert('Incorrect')
+            Alert.alert('Incorrects')
             setName('Login')
         }
         
